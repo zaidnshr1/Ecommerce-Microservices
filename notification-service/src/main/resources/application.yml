@@ -1,0 +1,21 @@
+
+
+
+server:
+  port: 8083
+
+spring:
+  application:
+    name: NOTIFICATION-SERVICE
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka

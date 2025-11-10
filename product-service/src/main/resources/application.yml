@@ -1,0 +1,25 @@
+
+
+server:
+  port: 8081
+
+spring:
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: PRODUCT-SERVICE
+    data:
+      mongodb:
+        host: mongodb
+        port: 27017
+        database: productdb
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka
